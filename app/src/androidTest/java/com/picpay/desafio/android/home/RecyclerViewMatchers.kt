@@ -1,4 +1,4 @@
-package com.picpay.desafio.android
+package com.picpay.desafio.android.home
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
@@ -11,7 +11,7 @@ import org.hamcrest.Matcher
 
 object RecyclerViewMatchers {
 
-    fun atPosition(
+    private fun atPosition(
         position: Int,
         itemMatcher: Matcher<View>
     ) = object : BoundedMatcher<View, RecyclerView>(RecyclerView::class.java) {
